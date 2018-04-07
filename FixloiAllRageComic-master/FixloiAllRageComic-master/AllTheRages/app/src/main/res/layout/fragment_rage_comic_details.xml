@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="RtlHardcoded">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation = "horizontal"
+      android:padding="16dp"
+      >
+
+    <TextView
+        android:id="@+id/tv_name_detail"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Freddie Mercury"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/im_comic_detail"
+        android:layout_width="@dimen/rage_comic_image_width"
+        android:layout_height="@dimen/rage_comic_image_height"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src = '@drawable/freddie_mercury'
+        android:layout_below="@+id/tv_name_detail"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:autoLink="web"
+        android:text="Freddie Mercury Rage Pose is a rage comic character made from a photo of deceased British musician and former lead vocalist for the rock band Queen Freddie Mercury. The image is typically used to indicate that an extraordinary feat has been accomplished, similar to the F!@# Yea illustration."
+        android:layout_below="@+id/im_comic_detail"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bt_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="MUA SẢN PHẨM"
+        android:background="@color/colorAccent"
+        android:textSize="16dp"
+        />
+
+
+  </RelativeLayout>
+
+</ScrollView>

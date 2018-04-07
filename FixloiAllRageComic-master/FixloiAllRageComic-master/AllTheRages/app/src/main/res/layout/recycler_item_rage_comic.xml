@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="@dimen/rage_comic_image_width"
+             android:layout_height="@dimen/fragment_recycler_item_rage_comic_height"
+             android:orientation="vertical"
+             style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+    android:weightSum="1">
+
+  <ImageView
+      android:id="@+id/im_comic"
+      android:layout_width="@dimen/rage_comic_image_width"
+      android:layout_height="@dimen/rage_comic_image_height"
+      android:scaleType="fitXY"
+      tools:src = '@drawable/freddie_mercury'
+      android:layout_weight="0.62"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+
+  <TextView
+      android:id="@+id/tv_percent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:text="-33%"
+      android:textColor="#FFFFFF"
+      android:textSize="16sp"
+      android:layout_alignRight="@id/im_comic"
+      />
+
+  <TextView
+      android:id="@+id/tv_price"
+      style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+      android:text="80000 VND"
+      android:layout_width="@dimen/rage_comic_text_width"
+      android:layout_height="wrap_content"
+      android:textColor="@color/colorBlack"
+      android:textSize="12sp"
+      android:layout_below="@+id/im_comic"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+
+  <TextView
+      android:id="@+id/tv_price_old"
+      style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+      android:text="100000 VND"
+      android:textColor="@color/colorGrey"
+      android:layout_width="@dimen/rage_comic_text_width"
+      android:layout_height="wrap_content"
+      android:textSize="12sp"
+      android:layout_below="@+id/tv_price"
+      />
+
+  <TextView
+      android:id="@+id/tv_name"
+      style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+      android:layout_width="@dimen/rage_comic_text_width"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:background="@color/colorWhite"
+      android:textColor="@color/colorBlack"
+      tools:text="LOL Guy ahahahahahahahah"
+      android:maxLength="11"
+      android:layout_marginBottom="5dp"
+      android:textSize="14sp"
+      android:layout_below="@id/tv_price_old"/>
+
+  <RatingBar
+      android:id="@+id/rt_rate"
+      style="?android:attr/ratingBarStyleSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_name"
+      android:layout_centerHorizontal="true"
+      android:isIndicator="true"
+      android:rating="2"
+      android:numStars="5"
+      android:layout_marginBottom="10dp"/>
+
+  <ImageButton
+      android:id="@+id/btn_buyrage"
+      android:layout_width="@dimen/image_shopping_width"
+      android:layout_height="@dimen/image_shopping_height"
+      android:background="@color/colorAccent"
+      android:src="@drawable/ic_shopping_cart_white_24px"
+      android:layout_toRightOf="@+id/tv_price"
+      android:layout_toEndOf="@+id/tv_price"
+      android:layout_alignBottom="@+id/tv_name"
+      android:layout_below="@+id/tv_price" />
+
+</RelativeLayout>

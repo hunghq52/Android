@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/sv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:paddingBottom="0dp"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="AKANA"
+        />
+
+
+    <item android:id="@+id/action_cart"
+        app:actionLayout="@layout/cart_layout"
+        android:title="Shopping"
+        app:showAsAction="always"/>
+
+
+</menu>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShipFragment"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above ="@+id/ll_tong_tien"
+        tools:context="shipdoandem.amytateam.org.shipdoandem.activities.FoodShippingActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_not_ship_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_tong_tien"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_tong_tien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_tong_tien"
+                android:background="#ffffff"
+                android:paddingTop="6dp"
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền ước tính:"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tv_payment"
+                android:paddingTop="6dp"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:text="0 VND"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_ship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:background="#ffffff"
+            android:textSize="12sp"
+            android:text="Chưa gồm phí ship"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/btn_ship_ngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHIP NGAY"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
